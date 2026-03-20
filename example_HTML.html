@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ 
+  <meta charset="UTF-8">                    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>HTML Example – My Web Page</title> 
+
+  
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; }
+    code { background: #f2f2f2; padding: 2px 6px; border-radius: 4px; }
+    table { border-collapse: collapse; width: 100%; }
+    td, th { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+    th { background: #e8f0fe; }
+  </style>
+</head>
+
+<body>
+ 
+  <header>
+    
+    <h1>Welcome to My HTML Page</h1>
+    <p>This page demonstrates the most common HTML elements.</p>
+  </header>
+
+ 
+  <nav>
+    <strong>Jump to: </strong>
+    <a href="#text-elements">Text</a> |  
+    <a href="#lists">Lists</a> |
+    <a href="#table">Table</a> |
+    <a href="#form">Form</a>
+  </nav>
+
+  <hr> 
+  <main>
+
+    
+    <section id="text-elements">
+      <h2>Text Elements</h2>
+
+      <p>This is a <strong>paragraph</strong>. Text can be made <strong>bold</strong>,
+         <em>italic (emphasis)</em>, or <u>underlined</u>.</p>
+
+      <p>You can add a line break inside a paragraph like<br>this — the br tag creates a new line.</p>
+
+      <p>Here is an <a href="https://www.example.com" target="_blank">external link</a>
+         (opens in a new tab) and a <code>&lt;code&gt;</code> element for inline code.</p>
+
+      <blockquote>
+        "The best way to learn HTML is to write HTML." – Every web developer, ever.
+      </blockquote>
+    </section>
+
+   
+    <section id="lists">
+      <h2>Lists</h2>
+
+      
+      <h3>Unordered List (ul)</h3>
+      <ul>
+        <li>HTML — Structure</li>   
+        <li>CSS  — Styling</li>
+        <li>JavaScript — Behaviour</li>
+      </ul>
+
+     
+      <h3>Ordered List (ol)</h3>
+      <ol>
+        <li>Open your text editor</li>
+        <li>Write your HTML</li>
+        <li>Save the file as .html</li>
+        <li>Open it in a browser</li>
+      </ol>
+    </section>
+
+   
+    <section>
+      <h2>Image</h2>
+    
+      <img src="https://via.placeholder.com/400x150?text=HTML+Image+Element"
+           alt="A placeholder image demonstrating the img tag"
+           width="400">
+      <p><small>The <code>alt</code> attribute is important for accessibility.</small></p>
+    </section>
+
+   
+    <section id="table">
+      <h2>Table</h2>
+      <table>
+        
+        <thead>
+          <tr>                         
+            <th>Technology</th>        
+            <th>Purpose</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+       
+        <tbody>
+          <tr>
+            <td>HTML</td>              
+            <td>Structure</td>
+            <td>Markup Language</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+            <td>Style Sheet Language</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Interactivity</td>
+            <td>Programming Language</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+    <section id="form">
+      <h2>Form</h2>
+      
+      <form action="#" method="get">
+
+       
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="e.g. Jane Smith"><br><br>
+
+       
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="jane@example.com"><br><br>
+
+        
+        <label for="topic">Favourite Topic:</label><br>
+        <select id="topic" name="topic">
+          <option value="">-- Choose one --</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+        </select><br><br>
+
+       
+        <p>Experience level:</p>
+        <input type="radio" id="beginner" name="level" value="beginner">
+        <label for="beginner">Beginner</label><br>
+        <input type="radio" id="intermediate" name="level" value="intermediate">
+        <label for="intermediate">Intermediate</label><br><br>
+
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="3" cols="40"
+                  placeholder="Type your message here..."></textarea><br><br>
+
+        
+        <button type="submit">Submit Form</button>
+        
+        <button type="reset">Reset</button>
+
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <hr>
+    <p><small>&copy; 2025 HTML Example. Created for academic purposes.</small></p>
+  </footer>
+
+</body>
+</html>

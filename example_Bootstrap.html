@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+
+  
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  >
+</head>
+
+<body class="bg-light">
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+
+      
+      <a class="navbar-brand fw-bold" href="#">Bootstrap Example</a>
+
+      
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+ 
+  <div class="container py-4">
+
+
+  
+    <div class="bg-primary text-white rounded p-5 mb-4 text-center">
+      
+      <h1 class="display-4 fw-bold">Bootstrap 5</h1>
+      <p class="lead">
+      
+        A free CSS framework for building responsive, mobile-first websites.
+      </p>
+    
+      <a href="#" class="btn btn-light btn-lg me-2">Get Started</a>
+      <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+    </div>
+
+
+   
+    <h2 class="mb-3">The Grid System (12 Columns)</h2>
+
+    
+    <div class="row g-3 mb-4">
+
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm"> 
+          <div class="card-body">
+            
+            <h5 class="card-title text-primary">HTML</h5>
+            <p class="card-text">The skeleton of every web page. Defines content structure using tags and elements.</p>
+          </div>
+         
+          <div class="card-footer">
+            <span class="badge bg-secondary">Markup Language</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-success">CSS</h5>
+            <p class="card-text">Adds visual styling to HTML — colours, fonts, spacing, and layout.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge bg-success">Style Language</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-warning">JavaScript</h5>
+            <p class="card-text">Makes pages interactive and dynamic — responds to user actions.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge bg-warning text-dark">Programming Language</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+   
+    <h2 class="mb-3">Buttons</h2>
+    <div class="mb-4">
+     
+      <button class="btn btn-primary me-2 mb-2">Primary</button>
+      <button class="btn btn-success me-2 mb-2">Success</button>
+      <button class="btn btn-danger me-2 mb-2">Danger</button>
+      <button class="btn btn-warning me-2 mb-2">Warning</button>
+      <button class="btn btn-outline-primary me-2 mb-2">Outline Primary</button>
+      <button class="btn btn-outline-secondary me-2 mb-2">Outline Secondary</button>
+      <button class="btn btn-sm btn-dark me-2 mb-2">Small Button</button>
+      <button class="btn btn-lg btn-info mb-2">Large Button</button>
+    </div>
+
+
+    
+    <h2 class="mb-3">Alerts</h2>
+    <div class="mb-4">
+     
+      <div class="alert alert-success" role="alert">
+        <strong>Success!</strong> Your changes have been saved.
+      </div>
+      <div class="alert alert-danger" role="alert">
+        <strong>Error!</strong> Something went wrong. Please try again.
+      </div>
+      <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Your session is about to expire.
+      </div>
+      <div class="alert alert-info" role="alert">
+        <strong>Info:</strong> Bootstrap 5 no longer requires jQuery.
+      </div>
+    </div>
+
+
+   
+    <h2 class="mb-3">Styled Form</h2>
+    <div class="card shadow-sm mb-4">
+      <div class="card-body">
+        <form>
+          
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              
+              <input type="text" class="form-control" id="firstName" placeholder="Jane">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Smith">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="jane@example.com">
+            
+            <div class="form-text text-muted">We will never share your email.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="course" class="form-label">Select Course</label>
+            
+            <select class="form-select" id="course">
+              <option value="">Choose...</option>
+              <option>Web Development</option>
+              <option>Data Science</option>
+              <option>Cyber Security</option>
+            </select>
+          </div>
+
+          <div class="mb-3 form-check">
+           
+            <input type="checkbox" class="form-check-input" id="agreeCheck">
+            <label class="form-check-label" for="agreeCheck">
+              I agree to the terms and conditions
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-outline-secondary ms-2">Reset</button>
+        </form>
+      </div>
+    </div>
+
+
+   
+    <h2 class="mb-3">Responsive Grid Demo</h2>
+    <p class="text-muted mb-3">Resize the window to see columns rearrange.</p>
+    <div class="row g-2 mb-4 text-center text-white">
+     
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="bg-primary rounded p-3">Col A</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="bg-success rounded p-3">Col B</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="bg-danger rounded p-3">Col C</div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+        <div class="bg-warning text-dark rounded p-3">Col D</div>
+      </div>
+    </div>
+
+
+    
+    <h2 class="mb-3">Badges &amp; Progress Bars</h2>
+    <div class="mb-4">
+      <p>
+        <span class="badge bg-primary me-1">HTML</span>
+        <span class="badge bg-success me-1">CSS</span>
+        <span class="badge bg-warning text-dark me-1">Bootstrap</span>
+        <span class="badge bg-danger me-1">JavaScript</span>
+        <span class="badge rounded-pill bg-info me-1">Pill Badge</span>
+      </p>
+
+      
+      <label class="mb-1">Course Completion</label>
+      
+      <div class="progress mb-2" style="height: 24px;">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+             style="width: 75%">75%</div>
+      </div>
+      <div class="progress" style="height: 18px;">
+        <div class="progress-bar bg-primary" style="width: 45%">45%</div>
+      </div>
+    </div>
+
+
+   
+    <footer class="border-top pt-3 mt-4 text-center text-muted">
+      <small>Bootstrap 5 Example — Academic Report Code Demonstration</small>
+    </footer>
+
+  </div>
+
+
+  
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>

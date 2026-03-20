@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Example</title>
+
+  <style>
+   
+
+    
+    * {
+      margin: 0;           
+      padding: 0;           
+      box-sizing: border-box; 
+    }
+
+   
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif; 
+      font-size: 16px;          
+      background-color: #f0f4f8; 
+      color: #333333;            
+      line-height: 1.6;          
+    }
+
+
+   
+
+    h1 {
+      font-size: 2rem;         
+      color: #1a237e;          
+      letter-spacing: 1px;      
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #283593;
+      margin: 24px 0 10px 0;   
+      border-left: 4px solid #3f51b5; 
+      padding-left: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+   
+    .content a {
+      color: #1565c0;
+      text-decoration: none;    
+    }
+
+    
+    .content a:hover {
+      text-decoration: underline;
+      color: #e53935;         
+    }
+
+
+
+    .box-model-demo {
+      
+      width: 300px;
+      height: 80px;
+
+     
+      padding: 20px;            
+
+      
+      border: 4px solid #3f51b5;
+      margin: 20px auto;       
+      background-color: #e8eaf6;
+      color: #1a237e;
+      font-weight: bold;
+      text-align: center;
+    }
+
+
+   
+
+    
+    .flex-container {
+      display: flex;           
+      flex-direction: row;      
+      justify-content: space-around; 
+      align-items: center;      
+      gap: 12px;                 
+      padding: 16px;
+      background-color: #e3f2fd;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+   
+    .flex-item {
+      background-color: #1565c0;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+      flex: 1;                  
+    }
+
+
+   
+
+    .grid-container {
+      display: grid;                          
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 12px;                             
+      padding: 16px;
+      background-color: #f3e5f5;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .grid-item {
+      background-color: #7b1fa2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+   
+    #grid-wide {
+      grid-column: span 2; 
+      background-color: #4a148c;
+    }
+
+
+    
+
+    .colour-demo {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 16px 0;
+    }
+
+    .swatch {
+      width: 100px;
+      height: 60px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    
+    .swatch-1 { background-color: #e53935; }         
+    .swatch-2 { background-color: rgb(33, 150, 243); } 
+    .swatch-3 { background-color: hsl(122, 39%, 35%); }
+    .swatch-4 { background-color: rgba(103, 58, 183, 0.85); } 
+    .swatch-5 { background: linear-gradient(135deg, #ff6f00, #e91e63); } 
+
+
+    
+
+    .hover-button {
+      display: inline-block;
+      background-color: #1565c0;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin: 8px 4px;
+    }
+
+    
+    .hover-button:hover {
+      background-color: #0d47a1; 
+      transform: translateY(-3px); 
+    }
+
+   
+    .hover-button:active {
+      transform: translateY(0); 
+    }
+
+
+    
+
+    .responsive-box {
+      background-color: #004d40;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 16px 0;
+      font-size: 1rem;
+    }
+
+    
+    @media (max-width: 600px) {
+      .responsive-box {
+        background-color: #e65100;
+        font-size: 0.85rem;
+      }
+
+      .flex-container {
+        flex-direction: column;   
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr; 
+      }
+    }
+
+
+    
+
+    .page-wrapper {
+      max-width: 900px;       
+      margin: 0 auto;        
+      padding: 0 20px 40px;
+    }
+
+    .content {
+      background-color: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08); 
+    }
+
+    .label {
+      display: inline-block;
+      background-color: #e8eaf6;
+      border: 1px solid #9fa8da;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 0.8rem;
+      color: #283593;
+      margin-bottom: 8px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="content">
+
+      <h1>CSS Example</h1>
+      <p>This file demonstrates how CSS styles HTML elements — from selectors and the box model to flexbox, grid, colours, and responsive design.</p>
+
+      
+      <h2>The Box Model</h2>
+      <span class="label">padding: 20px | border: 4px | margin: 20px auto</span>
+      <div class="box-model-demo">
+        Content Area (300×80px) + Padding + Border + Margin
+      </div>
+
+      
+      <h2>Flexbox Layout</h2>
+      <span class="label">display: flex | justify-content: space-around</span>
+      <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+      </div>
+
+      
+      <h2>CSS Grid Layout</h2>
+      <span class="label">grid-template-columns: repeat(3, 1fr)</span>
+      <div class="grid-container">
+        <div class="grid-item">Cell 1</div>
+        <div class="grid-item" id="grid-wide">Cell 2 (spans 2 columns)</div>
+        <div class="grid-item">Cell 3</div>
+        <div class="grid-item">Cell 4</div>
+        <div class="grid-item">Cell 5</div>
+      </div>
+
+      
+      <h2>Colours &amp; Backgrounds</h2>
+      <span class="label">hex | rgb | hsl | rgba | linear-gradient</span>
+      <div class="colour-demo">
+        <div class="swatch swatch-1">Hex</div>
+        <div class="swatch swatch-2">RGB</div>
+        <div class="swatch swatch-3">HSL</div>
+        <div class="swatch swatch-4">RGBA</div>
+        <div class="swatch swatch-5">Gradient</div>
+      </div>
+
+   
+      <h2>Transitions &amp; Hover Effects</h2>
+      <span class="label">transition: background-color 0.3s | transform 0.2s</span>
+      <br>
+      <button class="hover-button">Hover Over Me</button>
+      <button class="hover-button" style="background-color:#7b1fa2">Click Me</button>
+
+     
+      <h2>Responsive Design (Media Queries)</h2>
+      <span class="label">@media (max-width: 600px)</span>
+      <div class="responsive-box">
+        On a desktop this box is dark green.<br>
+        Resize the window to under 600px and it turns orange!
+      </div>
+
+      <h2>Typography &amp; Links</h2>
+      <p>CSS controls <strong>font size</strong>, <em>style</em>, spacing, and
+         <a href="#">link colours</a>. This link turns red on hover because of the
+         <code>a:hover</code> pseudo-class selector.</p>
+
+    </div>
+  </div>
+</body>
+</html>
